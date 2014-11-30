@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+{% block container %}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        Dashboard
+        <small>Control panel</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+    </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <!-- Main row -->
+    <div class="row">
+        <div class="col-md-6" style="width: 100%;">
+            <!-- Custom Tabs (Pulled to the right) -->
+            <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs pull-right">
+                    <li class="active"><a href="#tab_1-1" data-toggle="tab">Expense</a></li>
+                    <li><a href="#tab_2-2" data-toggle="tab">Income</a></li>
+                    <!-- <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Dropdown <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="pull-left header"><i class="fa fa-th"></i> Add your entry</li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab_1-1">
+                        <div class="box" style="border:none; box-shadow:none;">
+                            <!-- <div class="box-header">
+                                <h3 class="box-title">Different Width</h3>
+                            </div> -->
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <select class="form-control">
+                                        <option>Food</option>
+                                        <option>Travel</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="text" class="form-control" placeholder=".col-xs-4">
+                                    </div>
+                                    <!-- <div class="col-xs-4">
+                                        <input type="text" class="form-control" placeholder=".Amount">
+                                    </div> -->
+                                    <div class="input-group">
+                                        <span class="input-group-addon">$</span>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div><!-- /.box-body -->
+                            <div class="box-header">
+                                <h3 class="box-title">Current Month Expence</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body table-responsive">
+                                <table id="example1" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Category</th>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Food</td>
+                                            <td>11/11/14</td>
+                                            <td>70</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Travel</td>
+                                            <td>11/11/14</td>
+                                            <td>30</td>
+                                        </tr>
+                                    </tbody>
+                                    <!-- <tfoot>
+                                        <tr>
+                                            <th>Rendering engine</th>
+                                            <th>Browser</th>
+                                            <th>Platform(s)</th>
+                                            <th>Engine version</th>
+                                            <th>CSS grade</th>
+                                        </tr>
+                                    </tfoot> -->
+                                </table>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- /.tab-pane -->
+                    <div class="tab-pane" id="tab_2-2">
+                        <div class="box" style="border:none; box-shadow:none;">
+                            <!-- <div class="box-header">
+                                <h3 class="box-title">Different Width</h3>
+                            </div> -->
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <select class="form-control">
+                                        <option>Food</option>
+                                        <option>Travel</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="text" class="form-control" placeholder=".col-xs-4">
+                                    </div>
+                                    <!-- <div class="col-xs-4">
+                                        <input type="text" class="form-control" placeholder=".Amount">
+                                    </div> -->
+                                    <div class="input-group">
+                                        <span class="input-group-addon">$</span>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div><!-- /.box-body -->
+                            <div class="box-header">
+                                <h3 class="box-title">Current Month Income</h3>
+                            </div><!-- /.box-header -->
+                            <div class="box-body table-responsive">
+                                <table id="example1" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Category</th>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Food</td>
+                                            <td>11/11/14</td>
+                                            <td>70</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Travel</td>
+                                            <td>11/11/14</td>
+                                            <td>30</td>
+                                        </tr>
+                                    </tbody>
+                                    <!-- <tfoot>
+                                        <tr>
+                                            <th>Rendering engine</th>
+                                            <th>Browser</th>
+                                            <th>Platform(s)</th>
+                                            <th>Engine version</th>
+                                            <th>CSS grade</th>
+                                        </tr>
+                                    </tfoot> -->
+                                </table>
+                            </div><!-- /.box-body -->
+                        </div><!-- /.box -->
+                    </div><!-- /.tab-pane -->
+                </div><!-- /.tab-content -->
+            </div><!-- nav-tabs-custom -->
+        </div><!-- /.col -->
+    </div><!-- /.row (main row) -->
+
+</section><!-- /.content -->
+{% endblock %}

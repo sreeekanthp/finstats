@@ -1,0 +1,7 @@
+*.pyc
+*.swp
+*<1
+*[~]
+*/wsgi.py
+manage.py
+*/static/uploads/*
